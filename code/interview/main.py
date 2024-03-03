@@ -1,6 +1,5 @@
 #importing the libraries needed
 from pyspark.sql import SparkSession
-from pathlib import Path
 
 #creating a spark session
 spark = SparkSession.builder.appName("Client data").getOrCreate()
