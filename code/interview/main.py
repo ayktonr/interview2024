@@ -62,5 +62,7 @@ joined_df.show()
 #writing the dataframe to a csv file under 'client_data' folder
 joined_df.write.option("header", True).option("delimiter", ',').csv(path_output)
 
+#stopping the SparkSession
+spark.stop()
 
 
